@@ -1,0 +1,56 @@
+{
+  "name": "express-ts-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
+  "main": "src/app.ts",
+  "scripts": {
+    "build": "webpack",
+    "clean": "rm -rf dist",
+    "dev": "node dist/app.js",
+    "dev:ts": "ts-node src/app.ts",
+    "dev:ts:watch": "nodemon",
+    "postinstall": "tsc",
+    "heroku-postbuild": "webpack -p"
+  },
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^13.5.3",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "body-parser": "^1.19.0",
+    "css-loader": "^3.4.2",
+    "express": "^4.17.1",
+    "express-validator": "^6.4.0",
+    "html-webpack-plugin": "^3.2.0",
+    "pug": "^2.0.4",
+    "pug-loader": "^2.4.0",
+    "webpack": "^4.41.5",
+    "style-loader": "^1.1.3",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.5",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-typescript": "^6.3.1",
+    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.18.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uythoang/express-pug-bootstrap-ts-webpack-boilerplate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uythoang/express-pug-bootstrap-ts-webpack-boilerplate/issues"
+  },
+  "homepage": "https://github.com/uythoang/express-pug-bootstrap-ts-webpack-boilerplate#readme"
+}
